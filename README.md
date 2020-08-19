@@ -1,10 +1,10 @@
 # POSExceptionsGraphReports
 POS (Point of Sale) Graphical Reports of Exceptions by Dates/Users/Exceptions;
 
-1. run SQL/INIT_POSExceptionsGraphReports_Data_v_2.0.4.8_.sql first
+1. run POSExceptionsGraphReports/SQL/INIT_POSExceptionsGraphReports_Data_v_2.0.4.8_.sql first
   *create database, tables, and populate data;
 
-2. run SQL/SQL_POSExceptionsGraphReports_v_2.0.4.8_.sql;
+2. run POSExceptionsGraphReports/SQL/SQL_POSExceptionsGraphReports_v_2.0.4.8_.sql;
   *create functions and stored procedures;
   
 3. copy/paste folder POSExceptionsGraphReports into "C:\inetpub\wwwroot";
