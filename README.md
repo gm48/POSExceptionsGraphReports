@@ -19,7 +19,7 @@ POS (Point of Sale) Graphical Reports of Exceptions by Dates/Users/Exceptions.
 5.	SQL Server: "NT AUTHORITY\IUSR" and "NT AUTHORITY\NETWORK SERVICE" should be added to database "storekeeper_demo" Security/Users
 	use default password and dates from/to; 
 	
-	pls. see pictures in "POSExceptionsGraphReports/I_UI_picture" folder;
+	pls. see pictures in "_UI_picture" folder;
 
 ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   
 	Web.config file
