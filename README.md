@@ -1,6 +1,8 @@
 # POSExceptionsGraphReports
 
 POS (Point of Sale) Graphical Reports of Exceptions by Dates/Users/Exceptions.
+	
+	unzip "POSExceptionsGraphReports.zip" file;
 
 1.	run "/SQL/INIT_POSExceptionsGraphReports_Data_v_2.0.4.8_.sql" first;
 
@@ -30,14 +32,4 @@ POS (Point of Sale) Graphical Reports of Exceptions by Dates/Users/Exceptions.
 ;
 ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   
 
-
-
----   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   
-	Web.config file
-
-	specify following:
-	<add key="SITE_LOCATION" value="site location here"/>
-	<add name="dbconnection" connectionString="Data Source=DESKTOP-SUVI0CH\SQLEXPRESS02;Initial Catalog=storekeeper_TEST;Integrated Security=True;" providerName="System.Data.SqlClient"/>
-;
----   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   
 
