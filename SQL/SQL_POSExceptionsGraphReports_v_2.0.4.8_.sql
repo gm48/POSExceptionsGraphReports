@@ -1,4 +1,4 @@
-﻿
+
 
 ------------------------------------------  ++++++++++++++  ----------------------------------------------
 ------------------------------------------  ++++++++++++++  ----------------------------------------------
@@ -199,7 +199,7 @@ GO
 ------------------------------------------  ++++++++++++++  ----------------------------------------------
 create procedure [dbo].[__sp_CSHR]
 (
-	@actionType			nvarchar(64)	= null
+	@actionType		nvarchar(64)	= null
 	, @file_date_from	nvarchar(64)	= null		
 	, @file_date_to		nvarchar(64)	= null	
 	, @ExceptionName	nvarchar(1024)	= null		
@@ -224,11 +224,11 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_DVR]
 (
-	@actionType			nvarchar(64)	= null
+	@actionType		nvarchar(64)	= null
 	, @file_date_from	nvarchar(64)	= null
 	, @file_date_to		nvarchar(64)	= null
 	, @ExceptionName	nvarchar(1024)	= null
-	, @Title			nvarchar(1024) 	= null output
+	, @Title		nvarchar(1024) 	= null output
 )
 as
 begin
@@ -249,7 +249,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_ct_Daily_Average_By_DVR]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
@@ -272,12 +272,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_ct_By_Cashier]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
 	, @file_date_to			nvarchar(64)	= null
-	, @Title				nvarchar(1024)	= null
+	, @Title			nvarchar(1024)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 	, @CashierID			nvarchar(1024)	= null
 )
@@ -316,12 +316,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_ct_By_Cashier_By_Date]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
 	, @file_date_to			nvarchar(64)	= null
-	, @Title				nvarchar(1024)	= null
+	, @Title			nvarchar(1024)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 	, @CashierID			nvarchar(1024)	= null
 )
@@ -363,12 +363,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_ct_By_Cashier_By_Date_Custom]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
 	, @file_date_to			nvarchar(64)	= null
-	, @Title				nvarchar(1024)	= null
+	, @Title			nvarchar(1024)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 	, @CashierID			nvarchar(1024)	= null
 )
@@ -388,12 +388,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_ct_By_Date]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
 	, @file_date_to			nvarchar(64)	= null
-	, @Title				nvarchar(1024)	= null
+	, @Title			nvarchar(1024)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 	, @CashierID			nvarchar(1024)	= null
 )
@@ -434,12 +434,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_ct_By_DVR]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
 	, @file_date_to			nvarchar(64)	= null
-	, @Title				nvarchar(1024)	= null
+	, @Title			nvarchar(1024)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 	, @CashierID			nvarchar(1024)	= null
 )
@@ -479,12 +479,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_ct_By_DVR_By_Date]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
 	, @file_date_to			nvarchar(64)	= null
-	, @Title				nvarchar(1024)	= null
+	, @Title			nvarchar(1024)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 	, @CashierID			nvarchar(1024)	= null
 )
@@ -548,12 +548,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_ct_By_DVR_By_Date_Custom]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
 	, @file_date_to			nvarchar(64)	= null
-	, @Title				nvarchar(1024)	= null
+	, @Title			nvarchar(1024)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 	, @CashierID			nvarchar(1024)	= null
 )
@@ -573,12 +573,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_ct_By_DVR_By_Hour]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
 	, @file_date_to			nvarchar(64)	= null
-	, @Title				nvarchar(1024)	= null
+	, @Title			nvarchar(1024)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 	, @CashierID			nvarchar(1024)	= null
 )
@@ -610,16 +610,16 @@ SET QUOTED_IDENTIFIER ON
 GO
 create procedure [dbo].[__sp_URL]
 (
-	@action					nvarchar(64)	= null
+	@action				nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @Report_Parent		nvarchar(64)	= null
-	, @Report				nvarchar(64)	= null
+	, @Report			nvarchar(64)	= null
 	, @Title_Text			nvarchar(1024)	= null
 	, @CashierID_Title		nvarchar(64)	= null
-	, @Date					nvarchar(16)	= null
+	, @Date				nvarchar(16)	= null
 	, @Time_from			nvarchar(16)	= null
-	, @Time_to				nvarchar(16)	= null
+	, @Time_to			nvarchar(16)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 )
 as
@@ -649,19 +649,19 @@ GO
 create procedure [dbo].[__sp_POSExceptionsGraphReports]
 (
 	@procedure_name			nvarchar(64)	= null
-	, @action				nvarchar(64)	= null
+	, @action			nvarchar(64)	= null
 	, @actionType			nvarchar(64)	= null
 	, @sub_action			nvarchar(64)	= null
 	, @file_date_from		nvarchar(64)	= null
 	, @file_date_to			nvarchar(64)	= null
-	, @Title				nvarchar(1024)	= null
+	, @Title			nvarchar(1024)	= null
 	, @ExceptionName		nvarchar(1024)	= null
 	, @CashierID			nvarchar(1024)	= null
-	, @DateTimeStamp_from	nvarchar(64)	= null
+	, @DateTimeStamp_from		nvarchar(64)	= null
 	, @DateTimeStamp_to		nvarchar(64)	= null
-	, @Trans				nvarchar(1024)	= null
-	, @Port					nvarchar(8)		= null			--  actually, port number is an unsigned 16-bit integer ( 65535 max )
-	, @IP					nvarchar(64)	= null			--  actually, the correct maximum IPv6 string length is 45 characters
+	, @Trans			nvarchar(1024)	= null
+	, @Port				nvarchar(8)		= null			--  actually, port number is an unsigned 16-bit integer ( 65535 max )
+	, @IP				nvarchar(64)	= null			--  actually, the correct maximum IPv6 string length is 45 characters
 )
 as
 begin
